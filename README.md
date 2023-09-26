@@ -1,6 +1,6 @@
 # prediction
 
-### Project [SCP]: Predicting Correlation of Selected Stocks with the SPY Index
+### Project [SCP]: SPY Correlation Prediction on selected stocks
 * Objective: Predict the correlation of GOOG, AMZN, JPM, GME, and XOM with the SPY index for
 the next two months using only historical prices.
 * Instructions:
