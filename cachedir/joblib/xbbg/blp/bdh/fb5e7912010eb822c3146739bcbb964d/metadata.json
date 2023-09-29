@@ -1,0 +1,1 @@
+{"duration": 2.511561393737793, "input_args": {"tickers": "['AMZN US Equity', 'GME US Equity', 'GOOG US Equity', 'JPM US Equity', 'SPY US Equity', 'XOM US Equity']", "flds": "['CHG_PCT_1D']", "start_date": "Timestamp('2004-09-29 00:00:00')", "end_date": "'today'", "adjust": "'all'", "**": "{}"}}
