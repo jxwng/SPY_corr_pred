@@ -45,7 +45,7 @@ def plot_forecast(train, test, preds, mean_col='mean', lower_col='mean_ci_lower'
     for i, t in enumerate(stocks):
         axs[i].plot(train.index, train[t])
         axs[i].plot(test.index, test[t])
-        axs[i].plot(test.index, preds.loc[preds['ticker'] == t, mean_col])
-        axs[i].fill_between(test.index, preds.loc[preds['ticker'] == t, lower_col],
+        axs[i].plot(preds.loc[preds.ticker == t, 'date'], preds.loc[preds.ticker == t, mean_col])
+        axs[i].fill_between(preds.loc[preds['ticker'] == t, 'date'], preds.loc[preds['ticker'] == t, lower_col],
                             preds.loc[preds['ticker'] == t, upper_col], color='k', alpha=0.1)
         axs[i].set_title(t)
