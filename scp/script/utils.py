@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import pandas as pd
+import numpy as np
 from statsmodels.tools.eval_measures import rmse
 
 
@@ -11,7 +12,7 @@ def get_forecast(stocks, params, model, window, test, alpha=0.1):
         y_pred['ticker'] = t
         y_pred.index = test.index
         preds.append(y_pred)
-        params[t].update(m.params.to_dict())
+        #params[t].update(m.params.to_dict())
         params[t].update({'Test RMSE': rmse(test[t], y_pred['mean'])})
         params[t].update({'Test Mean': test[t].mean()})
     summary = pd.DataFrame(params).T
