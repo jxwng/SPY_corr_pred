@@ -1,0 +1,1 @@
+{"AMZN": {"order": [1, 0], "scoring": "bic"}, "GME": {"order": [1, 0], "scoring": "bic"}, "GOOG": {"order": [2, 0], "scoring": "bic"}, "JPM": {"order": [3, 0], "scoring": "bic"}, "XOM": {"order": [2, 2], "scoring": "bic"}}
