@@ -1,0 +1,9 @@
+matplotlib
+pandas
+statsmodels
+yfinance
+joblib
+prophet
+plotly
+seaborn
+gluonts
